@@ -16,11 +16,9 @@ const ll mod=1e9+7;
 const int N=1e3+10;
 int g[N][N];
 
-int u, v;
-
 void solve()
 {
-    int n, m;
+    int n, m, u, v;
     cin >> n >> m;
 
     vector<int>adj[n];
@@ -35,8 +33,9 @@ void solve()
 
     for(int i=0; i<n; i++)
     {
+        cout << "Node " << i << " connected with";
         for(auto it:adj[i])
-        cout << it << "->";
+        cout << "->" << it;
 
         cout << nn;
     }
@@ -53,7 +52,24 @@ int32_t main()
     freopen("out.txt", "w", stdout);
     #endif
 
-    solve();
+    int t;
+    cin >> t;
+    
+    while(t--)
+    {
+        solve();
+    }
 
     return 0;
 }
+
+/* input
+1
+5 7 
+0 1
+0 4
+1 2 
+1 3 
+1 4
+2 3 
+3 4  */
