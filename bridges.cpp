@@ -30,7 +30,7 @@ void dfs(int node, int par, vector<int>&vis, vector<int>&tin, vector<int>&low, i
         }
 
         else{
-            low[node]=min(low[node], tin[it]);
+            low[node]=min(low[node], low[it]);
         }
     }
 }
