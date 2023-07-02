@@ -89,13 +89,13 @@ void solve()
         cnt++;
     }
 
-    if(cnt==2) 
-    cout << "Graph is Semi_Eulerin" << nn;
+    if(cnt>2) 
+    cout << "Graph is Not Eulerin" << nn;
 
     else if(cnt==0)
     cout << "Graph is Eulerian" << nn;
 
-    else cout << "Graph is not Eulerian" << nn;
+    else cout << "Graph is Semi-Eulerian" << nn;
 }
 
 int32_t main()
